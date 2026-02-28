@@ -1,18 +1,17 @@
 # Overview
-This code supports the results presented in a research paper "**Spatial segregation amplifies inequality in urban healthcare access**." 
-The first four components correspond to the results (Sections 2.1–2.4) in the Main Text, whereas the fifth component contains analyses reported in the Supplementary Information (SI). The code structure is provided below.
+This code supports the results presented in the research paper *Spatial segregation amplifies inequality in urban healthcare access*. The first four sections correspond to the main results (Sections 2.1–2.4) presented in the Main Text, while the fifth section contains analyses reported in the Supplementary Information (SI). The code structure is provided below.
 
 ```
-code_final.py
+code_final.ipynb
 ├── 1. Distribution patterns and within-city variation in healthcare accessibility
 │   ├── Distribution across nationwide and provinces
 │   ├── Correlation analysis
-│   ├── CV
+│   ├── Coefficient of variation (CV)
 │   └── Fig.1
 │
 ├── 2. Spatial clustering and segregation of healthcare accessibility
 │   ├── Global Moran’s I
-│   ├── Local Indicators of Spatial Association
+│   ├── Local Indicators of Spatial Association (LISA)
 │   ├── Spatial segregation
 │   │   ├── Dissimilarity index
 │   │   ├── Inter-community distances
@@ -21,7 +20,7 @@ code_final.py
 │   └── Fig.2
 │
 ├── 3. Spatial embedding inequality in healthcare accessibility
-│   ├── SEI
+│   ├── Spatial Embedding Inequality Index (SEI)
 │   ├── Distribution of SEI
 │   ├── Regional comparisons
 │   ├── SEI and CV
@@ -34,7 +33,7 @@ code_final.py
 │   ├── Kruskal–Wallis test
 │   └── Fig.4
 │
-└── 5. Supplementary information
+└── 5. Supplementary Information
     ├── S1
     ├── S4
     ├── S5
@@ -48,9 +47,15 @@ code_final.py
 
 ```
 
-Note that for the code to work properly, please put the data (df.csv) in the same file directory as the codes, or modify the file paths in the codes.
+Note: To run the notebook successfully, place the input data file (`df.csv`) in the same directory as `code_final.ipynb`, or modify the file paths specified in the notebook accordingly.
 
+### Additional data requirement
 
+The code requires a China administrative boundary shapefile (`china.shp`) for spatial analysis and map visualization. 
+
+Administrative boundary data for China were primarily obtained from the Institute of Geographic Sciences and Natural Resources Research, Chinese Academy of Sciences, and supplemented with the South China Sea nine-dash line from the Alibaba Cloud Data Visualization Platform for map visualization.
+
+Users should obtain the boundary data from the original data providers and place the shapefile in the same directory as the code before running the scripts.
 
 # System requirements
 ## Hardware requirements
@@ -60,27 +65,26 @@ This code requires only a standard computer with enough RAM to support the in-me
 ### OS requirements
 This code has been tested on *macOS*.
 
-### Python dependencies
-This code mainly depends on the Python scientific and visualization packages：
-```
-pandas
-geopandas
-numpy
-matplotlib
-seaborn
-statsmodels
-os
-networkx
-itertools
-scipy
-shapely
-libpysal
-esda
-pyproj
-scikit-learn
-scikit-posthocs
-```
+### Python version
+This code was developed and tested using Python 3.12.3.
 
+### Python dependencies
+Required packages include:
+
+- pandas
+- geopandas
+- numpy
+- matplotlib
+- seaborn
+- statsmodels
+- scipy
+- shapely
+- networkx
+- libpysal
+- esda
+- pyproj
+- scikit-learn
+- scikit-posthocs
 
 # Installation guide
 This code is written using *Jupyter Notebook* and has no additional installation requirements.
