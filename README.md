@@ -1,10 +1,9 @@
 # Overview
-This code supports the results presented in a research paper "**Spatial segregation amplifies inequality in urban healthcare access**." The first part relates primarily to the results in the Main Text (including sections 2.1-2.6), and the second part is for the Supplementary Information (SI) sections. The detailed correspondence is shown in the table below.
-
-## Structure of `main_analysis.py`
+This code supports the results presented in a research paper "**Spatial segregation amplifies inequality in urban healthcare access**." 
+The first four components correspond to the results (Sections 2.1–2.4) in the Main Text, whereas the fifth component contains analyses reported in the Supplementary Information (SI). The code structure is provided below.
 
 ```
-main_analysis.py
+code_final.py
 ├── 1. Distribution patterns and within-city variation in healthcare accessibility
 │   ├── Distribution across nationwide and provinces
 │   ├── Correlation analysis
