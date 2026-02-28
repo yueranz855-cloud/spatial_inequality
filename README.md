@@ -5,34 +5,48 @@ This code supports the results presented in a research paper "**Spatial segregat
 
 ```
 main_analysis.py
-├── 1. Part 1
+├── 1. Distribution patterns and within-city variation in healthcare accessibility
 │   ├── Distribution across nationwide and provinces
 │   ├── Correlation analysis
 │   ├── CV
 │   └── Fig.1
 │
-├── 2. Part 2
+├── 2. Spatial clustering and segregation of healthcare accessibility
 │   ├── Global Moran’s I
 │   ├── Local Indicators of Spatial Association
 │   ├── Spatial segregation
 │   │   ├── Dissimilarity index
 │   │   ├── Inter-community distances
-│   │
 │   ├── Distance to city centers
 │   ├── Shares of HH-type and LL-type communities
 │   └── Fig.2
 │
-├── 3. Spatial autocorrelation
-│   ├── Global Moran's I
-│   └── LISA analysis
+├── 3. Spatial embedding inequality in healthcare accessibility
+│   ├── SEI
+│   ├── Distribution of SEI
+│   ├── Regional comparisons
+│   ├── SEI and CV
+│   ├── Regression analysis
+│   └── Fig.3
 │
-├── 4. City clustering
-│   ├── Feature construction
-│   └── Hierarchical clustering
+├── 4. City typologies of healthcare accessibility and associated spatial embedding inequality
+│   ├── Features
+│   ├── Hierarchical clustering
+│   ├── Kruskal–Wallis test
+│   └── Fig.4
 │
-└── 5. Regression analysis
-    ├── Multivariable models
-    └── Province fixed effects
+└── 5. Supplementary information
+    ├── S1
+    ├── S4
+    ├── S5
+    ├── S7
+    ├── S8
+    ├── S9
+    ├── S12
+    ├── S13
+    ├── S15
+    └── S16
+
 ```
 
 Note that for the code to work properly, please put the data (df.csv) in the same file directory as the codes, or modify the file paths in the codes.
