@@ -1,5 +1,5 @@
 # Overview
-This code supports the results presented in the research paper *Spatial segregation amplifies inequality in urban healthcare access*. The first four sections correspond to the main results (Sections 2.1–2.4) presented in the Main Text, while the fifth section contains analyses reported in the Supplementary Information (SI). The code structure is provided below.
+This code supports the results presented in the research paper "**Spatial segregation amplifies inequality in urban healthcare access**." The first four sections correspond to the main results (Sections 2.1–2.4) presented in the Main Text, while the fifth section contains analyses reported in the Supplementary Information (SI). The code structure is provided below.
 
 ```
 code_final.ipynb
